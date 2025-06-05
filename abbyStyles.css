@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Comfortaa:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-image: url(pink.jpg); /* Replace with your image */
+    background-size: cover; /* Makes the image cover the viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: repeat-y; 
+    align-items: center;
+  }
+
+
+.maintext {
+    font-family: "Winky Sans", 'Times New Roman', Times, serif;
+    font-size: 80px;
+    color: rgb(142, 74, 74);
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.subtext {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.left {
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+.right {
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.description {
+    font-family: "Amatic SC", 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: rgb(159, 126, 126);
+    margin-top: 0px;
+}
+
+.sect2 {
+    text-align: center;
+}
+.sect4 {
+    margin-left: 30px;
+    width: 400px;
+}
+.sect5 {
+    text-align: right;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.container-section2 {
+    margin: 0 30px;
+    gap: 20px;
+}
+
+
+.container-section3 {
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.container-section4 {
+    display: flex;
+    gap: 25px;
+}
+.container-section5 {
+    text-align: right;
+    display: flex;
+}
+
+
+.inteligenceImage1 {
+    background-image: url("./abbyImages/cooking.jpeg");
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    display: flex;
+}
+.inteligenceImage1 p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin: 20px 20px;
+}
+.inteligenceImage1:hover {
+    box-shadow: 0 0 0 300px rgba(236, 206, 206, 0.9) inset;
+}
+.inteligenceImage1:hover p {
+    opacity: 1;
+    transform: scale(1);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(159, 126, 126);
+    text-align: left;
+    margin: 20px 20px;
+    align-items: center;
+}
+.inteligenceImage2 {
+    background-image: url("./abbyImages/noThoughts.jpeg");
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    display: flex;
+}
+.inteligenceImage2 p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin: 20px 20px;
+    align-items: center;
+}
+.inteligenceImage2:hover {
+    box-shadow: 0 0 0 300px rgba(236, 206, 206, 0.9) inset;
+}
+.inteligenceImage2:hover p {
+    opacity: 1;
+    transform: scale(1);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(159, 126, 126);
+    text-align: left;
+    margin: 20px 20px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.images {
+    margin-top: 100px;
+    overflow: hidden;
+    padding: 45px 0;
+    background-color: aliceblue;
+    position: relative;
+    white-space: nowrap;
+}
+
+.images:before,
+.images:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.images:before {
+    left: 0;
+    background: linear-gradient(to left,rgba(255, 255, 255, 0), aliceblue);
+}
+.images:after {
+    right: 0;
+    background: linear-gradient(to right,rgba(255, 255, 255, 0), aliceblue);
+}
+
+
+.images-slide {
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+
+.images-slide img {
+    height: 300px;
+    margin: 0 5px;
+}
+
+.border {
+    height: 5px;
+    background-color: aliceblue;
+}
+
+.introductionImage {
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./abbyImages/image24.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+
+}
+.introductionImage p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin: 20px 20px;
+
+}
+.introductionImage:hover {
+    box-shadow: 0 0 0 300px rgba(236, 206, 206, 0.9) inset;
+}
+.introductionImage:hover p {
+    opacity: 1;
+    transform: scale(1);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(159, 126, 126);
+    text-align: left;
+    margin: 20px 20px;
+}
+
+.hover-image {
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+.hover-image p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin: 0 20px;
+}
+.hover-image:hover {
+    box-shadow: 0 0 0 300px rgba(245, 243, 243, 0.9) inset;
+}
+.hover-image:hover p {
+    opacity: 1;
+    transform: scale(1);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(159, 126, 126);
+    text-align: left;
+    margin: 0 20px;
+}
+
+.lockedin1 {
+    background-image: url("./abbyImages/lockedin1.jpeg");
+    width: 250px;
+}
+.notlockedin1 {
+    background-image: url("./abbyImages/notLockedIn1.jpeg");
+    width: 250px;
+}
+.notlockedin2 {
+    background-image: url("./abbyImages/notLockedIn2.jpeg");
+    width: 250px;
+}
+.notlockedin3 {
+    background-image: url("./abbyImages/notLockedIn3.jpeg");
+    width: 250px;
+}
+.lockedin2 {
+    background-image: url("./abbyImages/lockedIn2.jpeg");
+    width: 250px;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.wrapper h2 {
+    font-family: "Winky Sans", 'Times New Roman', Times, serif;
+    text-align: left;
+    color: rgb(142, 74, 74);
+    font-size: 12px;
+}
+
+.line {
+    height: 30px;
+    max-width: 800px;
+    margin: 0 auto 10px auto;
+    line-height: 30px;
+    font-size: 15px;
+    color: aliceblue;
+    padding: 0 0 0 10px;
+    position: relative;
+    background: rgb(240, 189, 189);
+    border-radius: 50px;
+    z-index: -2;
+    font-weight: 900;
+}
+
+.line::after {
+    content: "";
+    background: linear-gradient(45deg, pink, purple);
+    height: 30px;
+    transition: 2s;
+    display: block;
+    width: 100%;
+    animation: 8s animate infinite linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.line1::after {
+    max-width: 100%;
+}
+
+.line2::after {
+    max-width: 100%;
+}
+
+.line3::after {
+    max-width: 70%;
+}
+
+.line4::after {
+    max-width: 50%;
+}
+
+.line5::after {
+    max-width: 100%;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.factor-images {
+    margin-top: 10px;
+    display: flex;
+    height: 300px;
+    background: aliceblue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
+}
+
+.section6-container {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
+}
+
+.video-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section7-container {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.hiddenimages {
+    display: flex;
+    height: 500px;
+    overflow: hidden;
+    background-color: aliceblue;
+    position: relative;
+    white-space: nowrap;
+    padding: 15px 15px;
+}
+.hiddenimages-slide {
+    display: inline-block;
+    animation: 7s slide infinite linear;
+}
+.hiddenimages-slide img {
+    margin-left: 15px;
+    height: 500px;
+    transition: filter 0.5s ease; /* Smooth transition for blur effect */
+}
+.hiddenimages:before,
+.hiddenimages:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.hiddenimages:before {
+    left: 0;
+    background: linear-gradient(to left,rgba(255, 255, 255, 0), aliceblue);
+}
+.hiddenimages:after {
+    right: 0;
+    background: linear-gradient(to right,rgba(255, 255, 255, 0), aliceblue);
+}
+
+#toggle {
+    font-family: "Winky Sans", 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(100, 50, 50);
+    
+    border-radius: 10px;
+    border: 10px;
+    padding: 5px 10px;
+}
+
+.blurred img {
+    filter: blur(15px); /* Applies the blur effect */
+  }
+
+.container-button {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.container-section9 {
+    padding: 0 30px;
+    gap: 40px;
+    display: flex;
+}
+.sect9 {
+    margin-top: 45px;
+    width: 500px;
+}
+
+.sect10 {
+    margin: 0 30px;
+    align-items: center;
+}
+
+.images-column img {
+    width: 400px;
+    
+}
+
+
+
+
+
+  
